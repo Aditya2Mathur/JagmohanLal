@@ -1,49 +1,3 @@
-/*------------------------------------------------------------------
-[Master Stylesheet]
-
-Project:  Opticest
--------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[Table of contents]
-
-1. Body
-2. Header  / .header
-3. Banner  /.banner-con
-4. Service  /.service-con
-5. About  /.about-con
-6. Choose  /.choose-con
-7. Pricing  /.pricing-con
-8. Specialist Intro  /.specialist-intro-con
-9. Help  /.help-con
-10. Team  /.team-con
-11. Contact  /.contact-con
-12. Testimonial  /.testimonial-con
-13. Faq  /.faq-con
-14. Footer  /.footer-con
-*/
-
-/*------------------------------------------------------------------
-# [Color Codes]
-
-#    --e-global-color-primary: #ffffff;
-#    --e-global-color-secondary: #000000;
-#    --e-global-color-accent: #fddf5b;
-#    --e-global-color-text: #6d6d6d;
-#	 --e-global-color-white: #ffffff;
-#    --e-global-color-black: #000000;
-#    --e-global-color-dark-blue: #114a73;
-#    --e-global-color-grayish-blue: #bed1de;
-#    --e-global-color-light-grayish-blue: #f4f9fc;
-#    --e-global-color-star-yellow: #fddf5b;
-#    --e-global-color-pure-red: #ff0000;
-
-*/
-/*------------------------------------------------------------------
-# [Typography]
- 
-Body copy: "Archivo", serif;
-Heading: "Lexend Deca", serif;
-*/
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&amp;family=Lexend+Deca:wght@100..900&amp;display=swap');
 body {
@@ -238,7 +192,7 @@ html{
 /* Header */
 
 .header {
-    padding: 32px 0px;
+    padding: 10px 0px;
     position: relative;
     z-index: 5;
 }
@@ -1624,7 +1578,8 @@ html{
     transition: all 0.3s ease-in-out;
 }
 .footer-con .middle_portion .links li a:hover {
-    color: var(--e-global-color-accent);
+    color: var(--e-global-color-light-grayish-blue);
+    font-size: 105%;
 }
 .footer-con .middle_portion .timing {
     padding-left: 54px;
@@ -1639,12 +1594,9 @@ html{
     margin-bottom: 5px;
     color: var(--e-global-color-grayish-blue);
 }
-.footer-con .middle_portion .timing span {
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 400;
-    display: block;
-    color: var(--e-global-color-white);
+.footer-con .middle_portion .timing p:hover {
+    color: var(--e-global-color-primary);
+    font-size: 105%;
 }
 .footer-con .middle_portion .contact{
     padding-left: 38px;
@@ -1671,7 +1623,7 @@ html{
     transition: all 0.3s ease-in-out;
 }
 .footer-con .middle_portion .contact li a:hover {
-    color: var(--e-global-color-accent);
+    color: var(--e-global-color-primary);
 }
 .footer-con .copyright p{
     font-size: 12px;
