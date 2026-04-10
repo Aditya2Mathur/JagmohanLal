@@ -33,8 +33,79 @@
     <link href="assets/css/responsive.css" rel="stylesheet" type="text/css">
     <link href="assets/css/aos.css" rel="stylesheet">
     <link href="assets/css/magnific-popup.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS for Side Buttons and Responsiveness -->
+    <style>
+        body {
+            overflow-x: hidden; 
+        }
+
+        .vertical-buttons {
+            position: fixed;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .vertical-buttons a {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            display: inline-block;
+            padding: 15px 10px;
+            background-color: #015099;
+            color: #fff !important;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 5px 0 0 5px;
+            box-shadow: -3px 0px 5px rgba(0, 0, 0, 0.2);
+            font-size: 14px;
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .vertical-buttons a.donation {
+            background-color: #f2613d;
+        }
+
+        .vertical-buttons a:hover {
+            padding-right: 15px;
+            background-color: #0b3459;
+        }
+
+        .vertical-buttons a.donation:hover {
+            background-color: #d74825;
+        }
+        
+        /* Mobile Responsiveness scaling */
+        @media (max-width: 768px) {
+            .vertical-buttons {
+                transform: scale(0.8) translateY(-50%);
+                right: -6px;
+                gap: 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            .vertical-buttons {
+                transform: scale(0.65) translateY(-50%);
+                right: -10px;
+            }
+        }
+    </style>
+
 </head>
 <body>
+
+    <!-- Fixed Vertical Side Buttons -->
+    <div class="vertical-buttons">
+        <a href="contact.html" class="vertical-btn help-desk">Patient Help Desk</a>
+        <a href="#" class="vertical-btn donation">Donation</a>
+    </div>
+
 <!-- Error -->
 <div class="error_page position-relative">
     <div class="container">
