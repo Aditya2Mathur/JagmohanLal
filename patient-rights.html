@@ -332,22 +332,110 @@
                 </nav>
             </div>
         </header>
-        <!-- Search Form -->
-        <div id="search" class="">
-            <span class="close">X</span>
-            <form role="search" id="searchform" method="get">
-                <input value="" name="q" type="search" placeholder="Type to Search">
-            </form>
+
+<section class="banner3-con position-relative" style="padding: 100px 0; background-color: #015099; text-align: center;">
+    <h1 class="text-white">Patient Rights and Responsibilities</h1>
+</section>
+
+<section class="py-5" style="background-color: #f4f7f6;">
+    <div class="container">
+        <!-- Introduction -->
+        <div class="row mb-5">
+            <div class="col-12 text-center" data-aos="fade-down">
+                <div class="p-4 p-md-5 bg-white rounded shadow-sm d-inline-block mx-auto border-left" style="max-width: 900px; border-left-width: 5px !important; border-left-color: #015099 !important;">
+                    <p class="text-size-18 text-muted mb-0" style="line-height: 1.8;">
+                        Medical care within a hospital environment is a partnership between patients and health care workers. As well as giving you the basic rights which we have outlined, this also brings with it certain basic responsibilities on your part. You should play an active and responsible role in the health care process.
+                    </p>
+                </div>
+                
+                <div class="mt-4 p-3 bg-white border rounded shadow-sm d-inline-block" style="border-radius: 50px !important;">
+                    <i class="fa-solid fa-circle-info text-danger mr-2"></i> <span class="text-muted">If you have any comments or suggestions, please meet the</span> <strong class="text-dark">Medical Superintendent</strong>.
+                </div>
+            </div>
         </div>
-    <section class="banner3-con position-relative" style="padding: 100px 0; background-color: #015099; text-align: center;">
-        <h1 class="text-white">Patient Rights and Responsibilities</h1>
-    </section>
-    <section class="py-5" style="min-height: 400px;">
-        <div class="container text-center py-5">
-            <h2>Patient Rights and Responsibilities</h2>
-            <p>Content for this page will be added soon.</p>
+
+        <div class="row">
+            <!-- Your Rights -->
+            <div class="col-lg-6 mb-4" data-aos="fade-right">
+                <div class="bg-white p-4 p-md-5 rounded shadow h-100 border-top mt-3" style="border-top-width: 6px !important; border-top-color: #015099 !important; position: relative;">
+                    <div class="d-flex align-items-center mb-5 border-bottom pb-4">
+                        <i class="fa-solid fa-shield-halved fa-3x mr-4" style="color: #015099;"></i>
+                        <div>
+                            <h3 class="font-weight-bold mb-0 text-dark">Your Rights</h3>
+                            <span class="text-muted text-size-14 font-weight-bold text-uppercase d-block mt-1">As a Hospital Patient</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="custom-list right-list">
+                        <li>The right to receive medical advice and treatment which fully meets the currently accepted standards of care and quality.</li>
+                        <li>The right to information about what health care services are available and what charges are involved.</li>
+                        <li>The right to be given a clear description of your medical condition, with diagnosis, prognosis, and the treatment proposed including common risks.</li>
+                        <li>The right to know the names of any medication to be prescribed, its normal actions, and potential side effects (ADR).</li>
+                        <li>The right to accept or refuse any medication, investigation or treatment and to be informed of the likely consequences of doing so.</li>
+                        <li>The right to have a second medical opinion.</li>
+                        <li>The right to have your privacy, dignity, and religious and cultural beliefs respected.</li>
+                        <li>The right of access to medical information that relates to your condition and treatment.</li>
+                        <li>The right of access to medical information relating to your medical condition kept confidential.</li>
+                        <li>The right to make a complaint through channels provided by the Hospital and to have it dealt with promptly and fairly.</li>
+                        <li>The right to choose whether or not to take part in a medical research program.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Our Responsibilities -->
+            <div class="col-lg-6 mb-4" data-aos="fade-left">
+                <div class="bg-white p-4 p-md-5 rounded shadow h-100 border-top mt-3" style="border-top-width: 6px !important; border-top-color: #bd2a2a !important; position: relative;">
+                    <div class="d-flex align-items-center mb-5 border-bottom pb-4">
+                        <i class="fa-solid fa-hand-holding-heart fa-3x mr-4" style="color: #bd2a2a;"></i>
+                        <div>
+                            <h3 class="font-weight-bold mb-0 text-dark">Your Responsibilities</h3>
+                            <span class="text-muted text-size-14 font-weight-bold text-uppercase d-block mt-1">As a Hospital Patient</span>
+                        </div>
+                    </div>
+
+                    <ul class="custom-list resp-list border-left pl-4" style="border-left: 2px dashed rgba(189, 42, 42, 0.3) !important;">
+                        <li>Give your health care providers as much information as you can about present health, past illnesses, any allergies, and any other relevant details.</li>
+                        <li>Follow the prescribed and agreed treatment plan, and conscientiously comply with the instructions given.</li>
+                        <li>Show consideration for the rights of other patients and health care providers, by following the hospital rules concerning patient conduct.</li>
+                        <li>Keep any appointment that you make, or notify the hospital or clinic as early as possible if you are unable to do so.</li>
+                        <li>Do not ask health care providers to provide incorrect information, receipts, or certificates.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+    <style>
+        .custom-list { padding-left: 0; list-style: none; counter-reset: my-counter; }
+        .custom-list li {
+            position: relative;
+            margin-bottom: 25px;
+            padding-left: 55px;
+            color: #5d666f;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        .custom-list li::before {
+            counter-increment: my-counter;
+            content: counter(my-counter);
+            position: absolute;
+            left: 0;
+            top: 0px;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .right-list li::before { background-color: #e8f0fe; color: #015099; border: 2px solid #015099; }
+        .resp-list li::before { background-color: #fde8e8; color: #bd2a2a; border: 2px solid #bd2a2a; left: -18px !important; }
+        .resp-list li { padding-left: 35px; }
+    </style>
+</section>
+
 <!-- Footer -->
     <section class="footer-con position-relative">
         <figure class="mb-0 footer-leftimage">
