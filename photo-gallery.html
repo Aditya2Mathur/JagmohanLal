@@ -342,12 +342,192 @@
     <section class="banner3-con position-relative" style="padding: 100px 0; background-color: #015099; text-align: center;">
         <h1 class="text-white">Photo Gallery</h1>
     </section>
+    <style>
+        /* Gallery Grid Styles */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 20px 0;
+        }
+        .gallery-item {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+            z-index: 1;
+            position: relative;
+        }
+
+        /* Fullscreen Modal Styles */
+        #fullscreen-modal {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        #fullscreen-modal.show {
+            display: flex;
+            opacity: 1;
+        }
+        #fullscreen-image {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+            border-radius: 4px;
+            box-shadow: 0 0 20px rgba(255,255,255,0.1);
+        }
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            z-index: 10001;
+        }
+        .close-modal:hover {
+            color: #bd2a2a;
+        }
+        /* Loading Spinner */
+        .loading-indicator {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+        .loading-indicator i {
+            font-size: 24px;
+            color: #015099;
+        }
+    </style>
+
     <section class="py-5" style="min-height: 400px;">
         <div class="container text-center py-5">
-            <h2>Photo Gallery</h2>
-            <p>Content for this page will be added soon.</p>
+            <div id="gallery-container" class="gallery-grid">
+                <!-- Images will be loaded here dynamically -->
+            </div>
+            <div id="loading-indicator" class="loading-indicator">
+                <i class="fas fa-spinner fa-spin"></i> Loading more photos...
+            </div>
         </div>
     </section>
+
+    <!-- Fullscreen Modal -->
+    <div id="fullscreen-modal">
+        <span class="close-modal">&times;</span>
+        <img id="fullscreen-image" src="" alt="Fullscreen view">
+    </div>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const totalPhotos = 24;
+        const batchSize = 10;
+        let currentLoaded = 0;
+        const galleryContainer = document.getElementById('gallery-container');
+        const loadingIndicator = document.getElementById('loading-indicator');
+        
+        const photos = [];
+        for(let i=1; i<=totalPhotos; i++) {
+            photos.push(`assets/jagmohan_website/${i}.jpg`);
+        }
+
+        let isLoading = false;
+
+        function loadPhotos() {
+            if (currentLoaded >= totalPhotos || isLoading) return;
+            
+            isLoading = true;
+            loadingIndicator.style.display = 'block';
+            
+            setTimeout(() => {
+                const end = Math.min(currentLoaded + batchSize, totalPhotos);
+                for (let i = currentLoaded; i < end; i++) {
+                    const img = document.createElement('img');
+                    img.src = photos[i];
+                    img.alt = 'Jagmohan Lal Hospital Gallery Image ' + (i + 1);
+                    img.className = 'gallery-item';
+                    img.loading = 'lazy'; // Native lazy loading as fallback
+                    
+                    img.addEventListener('click', function() {
+                        openFullscreen(this.src);
+                    });
+                    
+                    galleryContainer.appendChild(img);
+                }
+                currentLoaded = end;
+                isLoading = false;
+                
+                if (currentLoaded >= totalPhotos) {
+                    loadingIndicator.style.display = 'none';
+                }
+            }, 300);
+        }
+
+        // Initial load
+        loadPhotos();
+
+        // Intersection Observer for robust lazy loading
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting && currentLoaded < totalPhotos) {
+                loadPhotos();
+            }
+        }, {
+            rootMargin: '200px'
+        });
+
+        observer.observe(loadingIndicator);
+
+        // Fullscreen Modal Logic
+        const modal = document.getElementById('fullscreen-modal');
+        const modalImg = document.getElementById('fullscreen-image');
+        const closeBtn = document.querySelector('.close-modal');
+
+        function openFullscreen(src) {
+            modalImg.src = src;
+            modal.classList.add('show');
+            document.body.style.overflow = 'hidden'; 
+        }
+
+        function closeFullscreen() {
+            modal.classList.remove('show');
+            document.body.style.overflow = ''; 
+            setTimeout(() => {
+                modalImg.src = ''; 
+            }, 300);
+        }
+
+        closeBtn.addEventListener('click', closeFullscreen);
+        
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                closeFullscreen();
+            }
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && modal.classList.contains('show')) {
+                closeFullscreen();
+            }
+        });
+    });
+    </script>
 <!-- Footer -->
     <section class="footer-con position-relative">
         <figure class="mb-0 footer-leftimage">
