@@ -128,7 +128,7 @@ $(document).ready(function () {
                 items: 1
             }
         }
-    })
+    });
 })
 
 $(document).ready(function () {

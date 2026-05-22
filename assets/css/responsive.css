@@ -54,7 +54,7 @@
 /* Home 2 */
 .banner2-con .banner-leftimage {display: none;}
 /* Home 3 */
-.banner3-con {padding: 180px 0 235px;}
+.banner3-con .banner-item {padding: 180px 0 235px;}
 .banner3-con .banner-icon {bottom: -74px;}
 .banner3-con .owl-carousel .owl-prev {left: -240px;}
 .banner3-con .owl-carousel .owl-next {right: -240px;}
@@ -128,7 +128,7 @@ h1 {font-size: 64px; line-height: 70px;}
 .article-con {padding: 100px 0 170px;}
 .article-con .article_content h2 {margin-bottom: 40px;}
 /* Home 3 */
-.banner3-con {padding: 130px 0 185px;}
+.banner3-con .banner-item {padding: 130px 0 185px;}
 .banner3-con .banner-icon {bottom: -74px;}
 .banner3-con .banner_content h6 {width: 340px; margin-bottom: 14px; padding: 0 68px;}
 .banner3-con .banner_content h6::before,
@@ -394,7 +394,7 @@ p {font-size: 18px; line-height: 24px;}
 .article-con .article-box .box-content .content img {margin-right: 4px;}
 .article-con .article-box .box-content .content .admin {margin-right: 10px;}
 /* Home 3 */
-.banner3-con {padding: 100px 0 155px;}
+.banner3-con .banner-item {padding: 100px 0 155px;}
 .banner3-con .banner-icon {bottom: -60px;}
 .banner3-con .banner-icon img {width: 130px;}
 .banner3-con .banner_content h6 {width: 320px; margin-bottom: 12px; padding: 0 55px;}
@@ -812,7 +812,7 @@ button:focus {outline: none;}
 .article-con .article-box .box-content .content img {margin-right: 10px;}
 .article-con .article-box .box-content .content .admin {margin-right: 20px;}
 /* Home 3 */
-.banner3-con {padding: 60px 0;}
+.banner3-con .banner-item {padding: 60px 0;}
 .banner3-con .banner-icon {display: none;}
 .banner3-con .banner_content h6 {width: 100%; margin-bottom: 4px; padding: 0;}
 .banner3-con .banner_content h6::before,
@@ -1192,7 +1192,7 @@ p {font-size: 14px; line-height: 20px;}
 .article-con .article-box {margin-bottom: 20px !important;}
 .article-con .article-box .box-content h5 {font-size: 16px; line-height: 22px; margin-bottom: 8px;}
 /* Home 3 */
-.banner3-con {padding: 50px 0;}
+.banner3-con .banner-item {padding: 50px 0;}
 .banner3-con .banner_content h1 {font-size: 34px; line-height: 42px; margin-bottom: 10px;}
 .banner3-con .banner_content p {margin-bottom: 20px; padding: 0 30px;}
 .banner3-con .banner_content .primary_btn {padding: 14px 20px;}

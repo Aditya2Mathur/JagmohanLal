@@ -73,25 +73,36 @@
         .navbar-nav .dropdown-menu {
             border: none;
             border-radius: 8px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             padding: 10px 0;
             overflow: hidden;
             animation: fadeIn 0.3s ease;
         }
+
         .navbar-nav .dropdown-item {
             padding: 10px 20px;
             font-weight: 500;
             color: #333;
             transition: all 0.3s;
         }
+
         .navbar-nav .dropdown-item:hover {
             background-color: #f8f9fa;
-            color: #bd2a2a; /* Accent Red */
+            color: #bd2a2a;
+            /* Accent Red */
             padding-left: 25px;
         }
+
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 
@@ -99,7 +110,7 @@
     <!-- Custom CSS for Side Buttons and Responsiveness -->
     <style>
         body {
-            overflow-x: hidden; 
+            overflow-x: hidden;
         }
 
         .vertical-buttons {
@@ -142,7 +153,7 @@
         .vertical-buttons a.donation:hover {
             background-color: #d74825;
         }
-        
+
         /* Mobile Responsiveness scaling */
         @media (max-width: 768px) {
             .vertical-buttons {
@@ -151,6 +162,7 @@
                 gap: 10px;
             }
         }
+
         @media (max-width: 480px) {
             .vertical-buttons {
                 transform: scale(0.65) translateY(-50%);
@@ -172,12 +184,14 @@
     <!-- Back to top button -->
 
     <div class="sub_banner position-relative">
-        
+
         <!-- Marquee -->
-        <div class="text-white py-1" style="background-color: #015099; font-size: 15px; font-weight: 600; letter-spacing: 0.5px;">
+        <div class="text-white py-1"
+            style="background-color: #015099; font-size: 15px; font-weight: 600; letter-spacing: 0.5px;">
             <div class="container-fluid position-relative">
                 <div class="d-flex align-items-center">
-                    <span class="badge badge-danger mr-2" style="background-color: #bd2a2a; padding: 5px 10px; border-radius: 4px;">LATEST NEWS</span>
+                    <span class="badge badge-danger mr-2"
+                        style="background-color: #bd2a2a; padding: 5px 10px; border-radius: 4px;">LATEST NEWS</span>
                     <marquee behavior="scroll" direction="left" scrollamount="6" class="mb-0"
                         style="flex:1; padding-top: 2px;">
                         <a href="charity-welfare.html" class="text-white" style="text-decoration: none;">JagmohanLal
@@ -221,8 +235,12 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
+
                             <li class="nav-item">
                                 <a class="nav-link navbar-text-color" href="./">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="charity-welfare.html">Charity Work</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="service.html">Service</a>
@@ -230,26 +248,26 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="leadership.html">Leadership</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="latest-news.html">Latest News</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="photo-gallery.html">Photo Gallery</a>
-                            </li>
+
+
                             <li class="nav-item">
                                 <a class="nav-link" href="career.html">Career</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     About Us
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="about-jagmohanlal-hospital.html">About JagmohanLal Hospital</a>
+                                    <a class="dropdown-item" href="about-jagmohanlal-hospital.html">About JagmohanLal
+                                        Hospital</a>
                                     <a class="dropdown-item" href="history-of-hospital.html">History of Hospital</a>
                                     <a class="dropdown-item" href="vision-and-mission.html">Vision and Mission</a>
-                                    <a class="dropdown-item" href="charity-welfare.html">Charity & Welfare activities</a>
-                                    <a class="dropdown-item" href="facilities-technologies.html">Facilities and tecnologies</a>
-                                    <a class="dropdown-item" href="patient-rights.html">Patient Right and Responsibilities</a>
+
+                                    <a class="dropdown-item" href="facilities-technologies.html">Facilities and
+                                        tecnologies</a>
+                                    <a class="dropdown-item" href="patient-rights.html">Patient Right and
+                                        Responsibilities</a>
                                     <a class="dropdown-item" href="insurance-tpa.html">Insurance TPA</a>
                                 </div>
                             </li>
@@ -300,37 +318,13 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12 text-center" data-aos="fade-up">
-                    <h2 class="font-weight-bold mb-3" style="color: #bd2a2a; border-bottom: 3px solid #bd2a2a; display: inline-block; padding-bottom: 10px; text-transform: uppercase;">Our Services</h2>
+                    <h2 class="font-weight-bold mb-3"
+                        style="color: #bd2a2a; border-bottom: 3px solid #bd2a2a; display: inline-block; padding-bottom: 10px; text-transform: uppercase;">
+                        Our Services</h2>
                 </div>
             </div>
             <div class="row justify-content-center" data-aos="fade-up">
                 <!-- Row 1 -->
-                <div class="col-lg-5 col-md-6 col-12 mb-4">
-                    <div class="service-red-block shadow h-100 d-flex align-items-center justify-content-center">
-                        <h5 class="mb-0 text-white font-weight-bold text-center p-4">Vision Rehabilitation</h5>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-6 col-12 mb-4">
-                    <div class="service-red-block shadow h-100 d-flex align-items-center justify-content-center">
-                        <h5 class="mb-0 text-white font-weight-bold text-center p-4">Binocular Vision</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center" data-aos="fade-up">
-                <!-- Row 2 -->
-                <div class="col-lg-5 col-md-6 col-12 mb-4">
-                    <div class="service-red-block shadow h-100 d-flex align-items-center justify-content-center">
-                        <h5 class="mb-0 text-white font-weight-bold text-center p-4">Neuro Ophthalmology</h5>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-6 col-12 mb-4">
-                    <div class="service-red-block shadow h-100 d-flex align-items-center justify-content-center">
-                        <h5 class="mb-0 text-white font-weight-bold text-center p-4">Pediatric Ophthalmology</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center" data-aos="fade-up">
-                <!-- Row 3 -->
                 <div class="col-lg-3 col-md-6 col-6 mb-4">
                     <div class="service-red-block shadow h-100 d-flex align-items-center justify-content-center">
                         <h5 class="mb-0 text-white font-weight-bold text-center p-3">Cataract</h5>
@@ -338,7 +332,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-6 mb-4">
                     <div class="service-red-block shadow h-100 d-flex align-items-center justify-content-center">
-                        <h5 class="mb-0 text-white font-weight-bold text-center p-3">Cornea</h5>
+                        <h5 class="mb-0 text-white font-weight-bold text-center p-3">Retina</h5>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-6 mb-4">
@@ -348,15 +342,30 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-6 mb-4">
                     <div class="service-red-block shadow h-100 d-flex align-items-center justify-content-center">
-                        <h5 class="mb-0 text-white font-weight-bold text-center p-3">Retina</h5>
+                        <h5 class="mb-0 text-white font-weight-bold text-center p-3">Cornea</h5>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center" data-aos="fade-up">
-                <!-- Row 4 -->
-                <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex justify-content-center">
-                    <div class="service-red-block shadow h-100 d-flex align-items-center justify-content-center w-100">
-                        <h5 class="mb-0 text-white font-weight-bold text-center p-4">Lab</h5>
+                <!-- Row 2 -->
+                <div class="col-lg-3 col-md-6 col-12 mb-4">
+                    <div class="service-red-block shadow h-100 d-flex align-items-center justify-content-center">
+                        <h5 class="mb-0 text-white font-weight-bold text-center p-3">Neuro Ophthalmology</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-4">
+                    <div class="service-red-block shadow h-100 d-flex align-items-center justify-content-center">
+                        <h5 class="mb-0 text-white font-weight-bold text-center p-3">Pediatric Ophthalmology</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-4">
+                    <div class="service-red-block shadow h-100 d-flex align-items-center justify-content-center">
+                        <h5 class="mb-0 text-white font-weight-bold text-center p-3">Oculoplasty</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-4">
+                    <div class="service-red-block shadow h-100 d-flex align-items-center justify-content-center">
+                        <h5 class="mb-0 text-white font-weight-bold text-center p-3">Vision Rehabilitation</h5>
                     </div>
                 </div>
             </div>
@@ -369,6 +378,7 @@
                 transition: transform 0.3s ease, box-shadow 0.3s ease;
                 cursor: pointer;
             }
+
             .service-red-block:hover {
                 transform: translateY(-5px);
                 box-shadow: 0 10px 20px rgba(189, 42, 42, 0.4) !important;
@@ -376,7 +386,7 @@
             }
         </style>
     </section>
-    
+
     <!-- Service -->
     <section class="service-con servicepage-con position-relative pt-0">
         <div class="container">
@@ -394,7 +404,7 @@
                         <figure class="icon">
                             <img src="assets/images/service-icon1.png" alt="image" class="img-fluid">
                         </figure>
-                        <h5>Cataract<br> Surgery</h5>
+                        <h5>Cataract</h5>
                         <p class="text-size-16">Advanced phacoemulsification cataract surgery with premium IOL implants.
                             Safe, painless procedure with quick recovery and excellent visual outcomes.</p>
                         <a href="Services/cataract-surgery.html" class="text-decoration-none arrow">Learn More<i
@@ -404,9 +414,21 @@
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12 all_column">
                     <div class="service-box all_boxes">
                         <figure class="icon">
+                            <img src="assets/images/service-icon5.png" alt="image" class="img-fluid">
+                        </figure>
+                        <h5>Retina</h5>
+                        <p class="text-size-16">Micro-incision vitrectomy for retinal detachment, diabetic retinopathy,
+                            macular holes, and vitreous hemorrhage treatment.</p>
+                        <a href="Services/vitrectomy-surgery.html" class="text-decoration-none arrow">Learn More<i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 all_column">
+                    <div class="service-box all_boxes">
+                        <figure class="icon">
                             <img src="assets/images/service-icon2.png" alt="image" class="img-fluid">
                         </figure>
-                        <h5>Glaucoma<br>Surgery</h5>
+                        <h5>Glaucoma</h5>
                         <p class="text-size-16">Comprehensive glaucoma treatment including trabeculectomy, glaucoma
                             drainage devices, and laser procedures to prevent vision loss.</p>
                         <a href="Services/glaucoma-surgery.html" class="text-decoration-none arrow">Learn More<i
@@ -418,7 +440,7 @@
                         <figure class="icon">
                             <img src="assets/images/service-icon3.png" alt="image" class="img-fluid">
                         </figure>
-                        <h5>Corneal <br> Transplantation</h5>
+                        <h5>Cornea</h5>
                         <p class="text-size-16">Full-thickness and lamellar corneal transplants using modern techniques.
                             Restores vision in cases of corneal scarring and diseases.</p>
                         <a href="Services/corneal-transplantation.html" class="text-decoration-none arrow">Learn More<i
@@ -430,46 +452,10 @@
                         <figure class="icon">
                             <img src="assets/images/service-icon4.png" alt="image" class="img-fluid">
                         </figure>
-                        <h5>Refractive<br> Surgery</h5>
-                        <p class="text-size-16">LASIK, PRK, and SMILE procedures to correct myopia, hyperopia, and
-                            astigmatism. Freedom from glasses and contact lenses.</p>
-                        <a href="Services/refractive-surgery.html" class="text-decoration-none arrow">Learn More<i
-                                class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12 all_column">
-                    <div class="service-box all_boxes">
-                        <figure class="icon">
-                            <img src="assets/images/service-icon5.png" alt="image" class="img-fluid">
-                        </figure>
-                        <h5>Vitrectomy<br> Surgery</h5>
-                        <p class="text-size-16">Micro-incision vitrectomy for retinal detachment, diabetic retinopathy,
-                            macular holes, and vitreous hemorrhage treatment.</p>
-                        <a href="Services/vitrectomy-surgery.html" class="text-decoration-none arrow">Learn More<i
-                                class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12 all_column">
-                    <div class="service-box all_boxes">
-                        <figure class="icon">
-                            <img src="assets/images/service-icon6.png" alt="image" class="img-fluid">
-                        </figure>
-                        <h5>laser <br> Photocoagulation</h5>
-                        <p class="text-size-16">Laser treatment for diabetic retinopathy, retinal tears, and macular
-                            edema. Precise, non-invasive procedure with minimal discomfort.</p>
-                        <a href="Services/laser-photocoagulation.html" class="text-decoration-none arrow">Learn More<i
-                                class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12 all_column">
-                    <div class="service-box all_boxes">
-                        <figure class="icon">
-                            <img src="assets/images/service-icon7.png" alt="image" class="img-fluid">
-                        </figure>
-                        <h5>Oculoplasty<br> Treatment</h5>
-                        <p class="text-size-16">Eyelid surgery for ptosis, entropion, ectropion, and cosmetic
-                            improvements. Restores function and enhances appearance.</p>
-                        <a href="Services/oculoplasty-treatment.html" class="text-decoration-none arrow">Learn More<i
+                        <h5>Neuro<br> Ophthalmology</h5>
+                        <p class="text-size-16">Expert diagnosis and management of complex visual problems related to
+                            the nervous system, including optic nerve disorders.</p>
+                        <a href="service.html" class="text-decoration-none arrow">Learn More<i
                                 class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -482,6 +468,30 @@
                         <p class="text-size-16">Specialized eye care for children including squint surgery, lazy eye
                             treatment, and congenital eye disorder management.</p>
                         <a href="Services/pediatric-ophthalmology.html" class="text-decoration-none arrow">Learn More<i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 all_column">
+                    <div class="service-box all_boxes">
+                        <figure class="icon">
+                            <img src="assets/images/service-icon7.png" alt="image" class="img-fluid">
+                        </figure>
+                        <h5>Oculoplasty</h5>
+                        <p class="text-size-16">Eyelid surgery for ptosis, entropion, ectropion, and cosmetic
+                            improvements. Restores function and enhances appearance.</p>
+                        <a href="Services/oculoplasty-treatment.html" class="text-decoration-none arrow">Learn More<i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 all_column">
+                    <div class="service-box all_boxes">
+                        <figure class="icon">
+                            <img src="assets/images/service-icon6.png" alt="image" class="img-fluid">
+                        </figure>
+                        <h5>Vision<br> Rehabilitation</h5>
+                        <p class="text-size-16">Comprehensive low vision assessment and therapy to help patients
+                            maximize their remaining vision and maintain independence.</p>
+                        <a href="service.html" class="text-decoration-none arrow">Learn More<i
                                 class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -518,17 +528,17 @@
                             <li>
                                 <span class="number counter">15</span>
                                 <sup class="plus">+</sup>
-                                <span class="text">Experience</span>
+                                <span class="text">Years of Experience</span>
                             </li>
                             <li>
-                                <span class="number counter">5000</span>
+                                <span class="number counter">16000</span>
                                 <sup class="plus">+</sup>
-                                <span class="text">surgeries</span>
+                                <span class="text">Successful Surgeries</span>
                             </li>
                             <li>
-                                <span class="number counter">100</span>
-                                <sup class="plus">%</sup>
-                                <span class="text">Satisified Patients</span>
+                                <span class="number counter">13L</span>
+                                <sup class="plus">+</sup>
+                                <span class="text">Satisfied Patients</span>
                             </li>
                         </ul>
                     </div>
@@ -543,7 +553,7 @@
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                     <div class="contact_wrapper position-relative">
                         <figure class="contact-image mb-0">
-                            <img src="assets/images/faqcontact-image.jpg" alt="image" class="img-fluid">
+                            <img src="assets/images/Enquiry.png" alt="image" class="img-fluid">
                         </figure>
                     </div>
                 </div>
@@ -643,8 +653,13 @@
                                         class="text-decoration-none">Services</a></li>
                                 <li><i class="fa-solid fa-arrow-right"></i><a href="team.html"
                                         class="text-decoration-none">Team</a></li>
+
                                 <li><i class="fa-solid fa-arrow-right"></i><a href="contact.html"
                                         class="text-decoration-none">Contact Us</a></li>
+                                <li><i class="fa-solid fa-arrow-right"></i><a href="latest-news.html"
+                                        class="text-decoration-none">Latest News</a></li>
+                                <li><i class="fa-solid fa-arrow-right"></i><a href="photo-gallery.html"
+                                        class="text-decoration-none">Photo Gallery</a></li>
                             </ul>
                         </div>
                     </div>
@@ -731,6 +746,7 @@
     <script src="assets/js/preloader.js"></script>
     <script src="assets/js/popup-image.js"></script>
     <script src="assets/js/search.js"></script>
+<script src="assets/js/donation-popup.js"></script>
 </body>
 
 </html>
