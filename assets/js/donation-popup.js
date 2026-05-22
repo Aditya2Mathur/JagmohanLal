@@ -24,10 +24,10 @@ $(document).ready(function () {
                                 <div class="bg-light p-3 rounded mb-3">
                                     <ul class="list-unstyled text-size-16 mb-0" style="line-height: 1.9;">
                                         <li><strong>Account Name:</strong> <span class="float-right text-right">Jagmohan Lal Charitable Trust</span></li>
-                                        <li class="border-top pt-1 mt-1"><strong>Bank Name:</strong> <span class="float-right text-right">State Bank of India (Sample)</span></li>
-                                        <li class="border-top pt-1 mt-1"><strong>Account No:</strong> <span class="float-right text-right font-weight-bold">12345678901234</span></li>
-                                        <li class="border-top pt-1 mt-1"><strong>IFSC Code:</strong> <span class="float-right text-right font-weight-bold">SBIN0001234</span></li>
-                                        <li class="border-top pt-1 mt-1"><strong>Branch:</strong> <span class="float-right text-right">Shahjahanpur Main Branch</span></li>
+                                        <li class="border-top pt-1 mt-1"><strong>Bank Name:</strong> <span class="float-right text-right">State Bank of India</span></li>
+                                        <li class="border-top pt-1 mt-1"><strong>Account No:</strong> <span class="float-right text-right font-weight-bold">44948190520</span></li>
+                                        <li class="border-top pt-1 mt-1"><strong>IFS Code:</strong> <span class="float-right text-right font-weight-bold">SBIN00018568</span></li>
+                                        <li class="border-top pt-1 mt-1"><strong>Branch:</strong> <span class="float-right text-right">SME Nawada Indepur</span></li>
                                     </ul>
                                 </div>
                                 <div class="mt-2">
@@ -38,10 +38,10 @@ $(document).ready(function () {
                             <div class="col-md-5 text-center pl-md-4">
                                 <h5 class="font-weight-bold mb-3" style="color: #bd2a2a;"><i class="fa-solid fa-qrcode mr-2"></i>Scan & Pay (UPI)</h5>
                                 <div class="qr-wrapper p-3 bg-light rounded d-inline-block shadow-sm mb-3" style="border: 1px solid #e9ecef;">
-                                    <img src="assets/images/barcode.png" alt="UPI QR Code" class="img-fluid" style="max-width: 160px; height: auto;">
+                                    <img src="#" alt="UPI QR Code" class="img-fluid" style="max-width: 160px; height: auto;">
                                 </div>
                                 <div class="upi-id-box p-2 rounded" style="background-color: #f8f9fa; border: 1px dashed #ccc;">
-                                    <p class="mb-0 text-size-16"><strong>UPI ID:</strong> <span style="color: #015099;">jagmohanlal@sbi</span></p>
+                                    <p class="mb-0 text-size-16"><strong>UPI ID:</strong> <span style="color: #015099;">#</span></p>
                                 </div>
                             </div>
                         </div>

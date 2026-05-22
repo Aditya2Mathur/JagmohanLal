@@ -35,9 +35,52 @@
     <link href="../assets/css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
     <link href="../assets/css/aos.css" rel="stylesheet">
     <link href="../assets/css/magnific-popup.css" rel="stylesheet" type="text/css">
+    <!-- Custom Dropdown Styles -->
+    <style>
+        .navbar-nav .dropdown-menu {
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 10px 0;
+            overflow: hidden;
+            animation: fadeIn 0.3s ease;
+        }
+        .navbar-nav .dropdown-item {
+            padding: 10px 20px;
+            font-weight: 500;
+            color: #333;
+            transition: all 0.3s;
+        }
+        .navbar-nav .dropdown-item:hover {
+            background-color: #f8f9fa;
+            color: #bd2a2a;
+            padding-left: 25px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        body { overflow-x: hidden; }
+        .vertical-buttons {
+            position: fixed; right: 0; top: 50%; transform: translateY(-50%); z-index: 9999; display: flex; flex-direction: column; gap: 15px;
+        }
+        .vertical-buttons a {
+            writing-mode: vertical-rl; text-orientation: mixed; display: inline-block; padding: 15px 10px; background-color: #015099; color: #fff !important; font-weight: bold; text-transform: uppercase; text-decoration: none; border-radius: 5px 0 0 5px; box-shadow: -3px 0px 5px rgba(0,0,0,0.2); font-size: 14px; transition: 0.3s; text-align: center;
+        }
+        .vertical-buttons a.donation { background-color: #f2613d; }
+        .vertical-buttons a:hover { padding-right: 15px; background-color: #0b3459; }
+        .vertical-buttons a.donation:hover { background-color: #d74825; }
+        @media (max-width: 768px) { .vertical-buttons { transform: scale(0.8) translateY(-50%); right: -6px; gap: 10px; } }
+        @media (max-width: 480px) { .vertical-buttons { transform: scale(0.65) translateY(-50%); right: -10px; } }
+    </style>
 </head>
 
 <body>
+    <!-- Fixed Vertical Side Buttons -->
+    <div class="vertical-buttons">
+        <a href="../contact.html" class="vertical-btn help-desk">Patient Help Desk</a>
+        <a href="#" class="vertical-btn donation">Donation</a>
+    </div>
     <!-- Back to top button -->
 
     <div class="sub_banner position-relative">
@@ -59,81 +102,44 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" href="#"
-                                    id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false"> Home </a>
-                                <div class="dropdown-menu drop-down-content">
-                                    <ul class="list-unstyled drop-down-pages">
-                                        <li class="nav-item"><a class="dropdown-item nav-link" href="../index.html">Home
-                                                1</a></li>
-                                        <li class="nav-item"><a class="dropdown-item nav-link"
-                                                href="../index1.html">Home 2</a></li>
-                                        <li class="nav-item"><a class="dropdown-item nav-link"
-                                                href="../index2.html">Home 3</a></li>
-                                    </ul>
-                                </div>
+
+                            <li class="nav-item">
+                                <a class="nav-link navbar-text-color" href="../index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../about.html">About Us</a>
+                                <a class="nav-link" href="../charity-welfare.html">Charity Work</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../service.html">Services</a>
+                                <a class="nav-link" href="../service.html">Service</a>
                             </li>
-                            <li class="nav-item dropdown active">
-                                <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" href="#"
-                                    id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false"> Pages </a>
-                                <div class="dropdown-menu drop-down-content">
-                                    <ul class="list-unstyled drop-down-pages">
-                                        <li class="nav-item active"><a class="dropdown-item nav-link"
-                                                href="../service-detail.html">Service Details</a></li>
-                                        <li class="nav-item"><a class="dropdown-item nav-link"
-                                                href="../case-studies.html">Case Studies</a></li>
-                                        <li class="nav-item"><a class="dropdown-item nav-link"
-                                                href="../pricing.html">Pricing</a></li>
-                                        <li class="nav-item"><a class="dropdown-item nav-link"
-                                                href="../team.html">Team</a></li>
-                                        <li class="nav-item"><a class="dropdown-item nav-link"
-                                                href="../review.html">Review</a></li>
-                                        <li class="nav-item"><a class="dropdown-item nav-link"
-                                                href="../faq.html">Faq's</a></li>
-                                        <li class="nav-item"><a class="dropdown-item nav-link"
-                                                href="../404.html">404</a></li>
-                                        <li class="nav-item"><a class="dropdown-item nav-link"
-                                                href="../coming-soon.html">Coming Soon</a></li>
-                                    </ul>
-                                </div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../leadership.html">Leadership</a>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../career.html">Career</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" href="#"
-                                    id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false"> Blog </a>
-                                <div class="dropdown-menu drop-down-content">
-                                    <ul class="list-unstyled drop-down-pages">
-                                        <li class="nav-item"><a class="dropdown-item nav-link"
-                                                href="../blog.html">Blog</a></li>
-                                        <li class="nav-item"><a class="dropdown-item nav-link"
-                                                href="../single-blog.html">Single Blog</a></li>
-                                        <li class="nav-item"><a class="dropdown-item nav-link"
-                                                href="../load-more.html">Load More</a></li>
-                                        <li class="nav-item"><a class="dropdown-item nav-link"
-                                                href="../one-column.html">One Column</a></li>
-                                        <li class="nav-item"><a class="dropdown-item nav-link"
-                                                href="../two-column.html">Two Column</a></li>
-                                        <li class="nav-item"><a class="dropdown-item nav-link"
-                                                href="../three-column.html">Three Column</a></li>
-                                        <li class="nav-item"><a class="dropdown-item nav-link"
-                                                href="../three-colum-sidbar.html">Three Column Sidebar</a></li>
-                                        <li class="nav-item"><a class="dropdown-item nav-link"
-                                                href="../four-column.html">Four Column</a></li>
-                                        <li class="nav-item"><a class="dropdown-item nav-link"
-                                                href="../six-colum-full-wide.html">Six Column</a></li>
-                                    </ul>
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    About Us
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="../about-jagmohanlal-hospital.html">About JagmohanLal
+                                        Hospital</a>
+                                    <a class="dropdown-item" href="../history-of-hospital.html">History of Hospital</a>
+                                    <a class="dropdown-item" href="../vision-and-mission.html">Vision and Mission</a>
+
+                                    <a class="dropdown-item" href="../facilities-technologies.html">Facilities and
+                                        tecnologies</a>
+                                    <a class="dropdown-item" href="../patient-rights.html">Patient Right and
+                                        Responsibilities</a>
+                                    <a class="dropdown-item" href="../insurance-tpa.html">Insurance TPA</a>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../contact.html">Contact Us</a>
+                                <a class="nav-link" href="../contact.html">Contact</a>
                             </li>
                         </ul>
                         <div class="last_list">
@@ -185,100 +191,16 @@
                             <img src="../assets/images/service_detail_image.jpg" alt="image" class="img-fluid">
                         </figure>
                         <h3 data-aos="fade-up">Cataract Surgery</h3>
-                        <p class="text1 text-size-16" data-aos="fade-up">Advanced phacoemulsification cataract surgery
-                            with premium IOL implants. Safe, painless procedure with quick recovery and excellent visual
-                            outcomes.
-                        </p>
-                        <p class="text2 text-size-16" data-aos="fade-up">Excepteur sint occaecat cupidatat non proident,
-                            sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam, eaque ipsa quae
-                            ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-                            ipsam voluptatem quia voluptas.
-                        </p>
+                        <p class="text1 text-size-16" data-aos="fade-up">Advanced phacoemulsification cataract surgery with premium IOL implants. Safe, painless procedure with quick recovery and excellent visual outcomes.</p>
+                        <p class="text2 text-size-16" data-aos="fade-up">Cataracts cause a progressive clouding of the eye's natural lens, leading to blurred vision, glare, and difficulty seeing at night. At Jagmohan Lal Hospital, we specialize in advanced cataract treatments to restore clear vision and improve your quality of life safely and effectively.</p>
                         <ul class="list-unstyled list" data-aos="fade-up">
-                            <li class="text-size-16"><i class="fa-solid fa-check"></i>Quis ipsum suspendisse ultrices
-                                gravida</li>
-                            <li class="text-size-16"><i class="fa-solid fa-check"></i>Excepteur sint occaecat cupidatat.
-                            </li>
-                            <li class="text-size-16"><i class="fa-solid fa-check"></i>Duis aute irure dolor in voluta
-                                facis.</li>
-                            <li class="text-size-16"><i class="fa-solid fa-check"></i>Rerum hic tenetur a delectus au
-                                occae.</li>
+                            <li class="text-size-16"><i class="fa-solid fa-check"></i>Micro-Incision Cataract Surgery (Phacoemulsification)</li>
+                            <li class="text-size-16"><i class="fa-solid fa-check"></i>Premium Intraocular Lens (IOL) Implants (Multifocal, Toric)</li>
+                            <li class="text-size-16"><i class="fa-solid fa-check"></i>Painless, sutureless, and bloodless procedure</li>
+                            <li class="text-size-16"><i class="fa-solid fa-check"></i>Rapid recovery and minimal downtime</li>
                         </ul>
-                        <p class="text1 text-size-16" data-aos="fade-up">Mabore et dolore magna aliqua. Ut enim ad minim
-                            veniam, quis nostrud exercitation. Eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Quis ipsum suspendisse. Quis ipsum suspendisse ultrices gravida. Risus
-                            commodo viverra maecenas accumsan lacus vel facilisis.
-                        </p>
-                        <p class="text-size-16 mb-0" data-aos="fade-up">Sunt in culpa qui officia deserunt mollit. Lorem
-                            ipsum dolor sit amet, consectetur
-                            adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Service -->
-    <section class="service-con servicepage-con servicedetail-page position-relative">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 mx-auto">
-                    <div class="service_content text-center" data-aos="fade-up">
-                        <h6>What We Offer</h6>
-                        <h2>We Provide Best Services</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row all_row" data-aos="fade-up">
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12 all_column">
-                    <div class="service-box all_boxes">
-                        <figure class="icon">
-                            <img src="../assets/images/service-icon1.png" alt="image" class="img-fluid">
-                        </figure>
-                        <h5>Laser<br> Eye Surgery</h5>
-                        <p class="text-size-16">Duis aute irure dolor in reprehenderit in voluptate aesse cillum
-                            dolore...</p>
-                        <a href="../service-detail.html" class="text-decoration-none arrow">Learn More<i
-                                class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12 all_column">
-                    <div class="service-box all_boxes">
-                        <figure class="icon">
-                            <img src="../assets/images/service-icon2.png" alt="image" class="img-fluid">
-                        </figure>
-                        <h5>Eye<br> Treatment</h5>
-                        <p class="text-size-16">Nuis aute irure dolor in reprehenderit in voluptate aesse cillum
-                            dolore...</p>
-                        <a href="../service-detail.html" class="text-decoration-none arrow">Learn More<i
-                                class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12 all_column">
-                    <div class="service-box all_boxes">
-                        <figure class="icon">
-                            <img src="../assets/images/service-icon3.png" alt="image" class="img-fluid">
-                        </figure>
-                        <h5>Transitions<br> Lenses</h5>
-                        <p class="text-size-16">Muis aute irure dolor in reprehenderit in voluptate aesse cillum
-                            dolore...</p>
-                        <a href="../service-detail.html" class="text-decoration-none arrow">Learn More<i
-                                class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12 all_column">
-                    <div class="service-box all_boxes">
-                        <figure class="icon">
-                            <img src="../assets/images/service-icon4.png" alt="image" class="img-fluid">
-                        </figure>
-                        <h5>Surgical<br> Procedures</h5>
-                        <p class="text-size-16">Guis aute irure dolor in reprehenderit in voluptate aesse cillum
-                            dolore...</p>
-                        <a href="../service-detail.html" class="text-decoration-none arrow">Learn More<i
-                                class="fa-solid fa-arrow-right"></i></a>
+                        <p class="text1 text-size-16" data-aos="fade-up">Our state-of-the-art operating theaters are equipped with the latest surgical technology, ensuring precision and exceptional visual outcomes. Our experienced surgical team carefully evaluates your vision needs to recommend the best customized IOL for your lifestyle.</p>
+                        <p class="text-size-16 mb-0" data-aos="fade-up">Don't let cataracts dim your world. We are committed to providing personalized, compassionate care from your initial consultation through your rapid post-operative recovery, helping you see clearly again.</p>
                     </div>
                 </div>
             </div>
@@ -334,41 +256,23 @@
                         <div class="links">
                             <h5 class="heading">Useful Links</h5>
                             <ul class="list-unstyled mb-0">
-                                <li><i class="fa-solid fa-arrow-right"></i><a href="../index.html"
-                                        class="text-decoration-none">Home</a></li>
-                                <li><i class="fa-solid fa-arrow-right"></i><a href="../about.html"
-                                        class="text-decoration-none">About</a></li>
-                                <li><i class="fa-solid fa-arrow-right"></i><a href="../service.html"
-                                        class="text-decoration-none">Services</a></li>
-                                <li><i class="fa-solid fa-arrow-right"></i><a href="../team.html"
-                                        class="text-decoration-none">Team</a></li>
-                                <li><i class="fa-solid fa-arrow-right"></i><a href="../contact.html"
-                                        class="text-decoration-none">Contact Us</a></li>
+                                <li><i class="fa-solid fa-arrow-right"></i><a href="../index.html" class="text-decoration-none">Home</a></li>
+                                <li><i class="fa-solid fa-arrow-right"></i><a href="../about.html" class="text-decoration-none">About</a></li>
+                                <li><i class="fa-solid fa-arrow-right"></i><a href="../service.html" class="text-decoration-none">Services</a></li>
+                                <li><i class="fa-solid fa-arrow-right"></i><a href="../photo-gallery.html" class="text-decoration-none">Gallery</a></li>
+                                <li><i class="fa-solid fa-arrow-right"></i><a href="../contact.html" class="text-decoration-none">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-4 col-6">
-                        <div class="timing">
-                            <h5 class="heading">Treatment</h5>
+                        <div class="links">
+                            <h5 class="heading">Treatments</h5>
                             <ul class="list-unstyled mb-0">
-                                <li>
-                                    <p>Cataract</p>
-                                </li>
-                                <li>
-                                    <p>Vision Therapy</p>
-                                </li>
-                                <li>
-                                    <p>Glaucoma</p>
-                                </li>
-                                <li>
-                                    <p>Pterygium</p>
-                                </li>
-                                <li>
-                                    <p>Anti-VEGF</p>
-                                </li>
-                                <li>
-                                    <p>Lazer</p>
-                                </li>
+                                <li><i class="fa-solid fa-arrow-right"></i><a href="cataract-surgery.html" class="text-decoration-none">Cataract</a></li>
+                                <li><i class="fa-solid fa-arrow-right"></i><a href="vitrectomy-surgery.html" class="text-decoration-none">Retina</a></li>
+                                <li><i class="fa-solid fa-arrow-right"></i><a href="glaucoma-surgery.html" class="text-decoration-none">Glaucoma</a></li>
+                                <li><i class="fa-solid fa-arrow-right"></i><a href="corneal-transplantation.html" class="text-decoration-none">Cornea</a></li>
+                                <li><i class="fa-solid fa-arrow-right"></i><a href="pediatric-ophthalmology.html" class="text-decoration-none">Pediatric Eye Care</a></li>
                             </ul>
                         </div>
                     </div>

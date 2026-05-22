@@ -19,9 +19,9 @@ services = [
         "description": "Full-thickness and lamellar corneal transplants using modern techniques. Restores vision in cases of corneal scarring and diseases."
     },
     {
-        "filename": "refractive-surgery.html",
-        "title": "Refractive Surgery",
-        "description": "LASIK, PRK, and SMILE procedures to correct myopia, hyperopia, and astigmatism. Freedom from glasses and contact lenses."
+        "filename": "neuro-ophthalmology.html",
+        "title": "Neuro Ophthalmology",
+        "description": "Expert diagnosis and management of complex visual problems related to the nervous system, including optic nerve disorders."
     },
     {
         "filename": "vitrectomy-surgery.html",
@@ -29,9 +29,9 @@ services = [
         "description": "Micro-incision vitrectomy for retinal detachment, diabetic retinopathy, macular holes, and vitreous hemorrhage treatment."
     },
     {
-        "filename": "laser-photocoagulation.html",
-        "title": "Laser Photocoagulation",
-        "description": "Laser treatment for diabetic retinopathy, retinal tears, and macular edema. Precise, non-invasive procedure with minimal discomfort."
+        "filename": "vision-rehabilitation.html",
+        "title": "Vision Rehabilitation",
+        "description": "Comprehensive low vision assessment and therapy to help patients maximize their remaining vision and maintain independence."
     },
     {
         "filename": "oculoplasty-treatment.html",

@@ -3378,7 +3378,7 @@ html {
     height: 100%;
     opacity: 48%;
     position: absolute;
-    background-image: url(../images/subbanner-backgroundimage.jpg);
+    background-image: url(../images/about_top.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3752,7 +3752,7 @@ html {
     right: 0;
     top: 0;
     position: absolute;
-    background-image: url(../images/choose-rightbackground.jpg);
+    background-image: url(../images/about_3.jpg);
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
